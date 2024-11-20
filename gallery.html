@@ -1,0 +1,212 @@
+<!doctype html> 
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Gallery - Uganda Thunder Volleyball Team</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Background for the gallery section */
+    .parallax-window3 {
+      background-image: url('images/banner2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      color: aliceblue;
+    }
+    /* Gallery styling */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 60px 0;
+      color: aliceblue;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Lightbox (Modal) styling */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 50%;
+      max-width: 400px;
+    }
+    .modal-caption {
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window3" data-parallax="scroll" data-image-src="images/banner2.jpg">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container"> 
+        <a class="navbar-brand mr-auto" href="#"><img src="images/logo.png" alt="Uganda Thunder Volleyball Team" /></a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
+          <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="about-us.html">About</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="services.html">Services</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="gallery.html">Gallery</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="fh5co-banner-text-box">
+        <div class="quote-box pl-5 pr-5 wow bounceInRight">
+          <h2>Gallery - Uganda Thunder Volleyball Team</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Apply background image to the about-us section */
+    #gallery {
+      background-image: url('images/volleyball-6dvotamb3ddiy7qw.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 60px 0;
+    }
+  </style>
+
+  <!-- Gallery Section -->
+  <div id="gallery" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="wow bounceInLeft" data-wow-delay=".25s" style="color: aliceblue;">Our Gallery</h3>
+        <hr />
+        <p class="wow bounceInRight" data-wow-delay=".25s" style="color: aliceblue;">
+          Explore moments captured during our events, matches, and team activities.
+        </p>
+      </div>
+    </div>
+    <div class="gallery">
+      <img src="images/g1.jpg" alt="Gallery Image 1" class="gallery-img">
+      <img src="images/g2.jpg" alt="Gallery Image 2" class="gallery-img">
+      <img src="images/g3.jpg" alt="Gallery Image 3" class="gallery-img">
+      <img src="images/g1.jpg" alt="Gallery Image 1" class="gallery-img">
+      <img src="images/g2.jpg" alt="Gallery Image 2" class="gallery-img">
+      <img src="images/g3.jpg" alt="Gallery Image 3" class="gallery-img">
+      <img src="images/g1.jpg" alt="Gallery Image 1" class="gallery-img">
+      <img src="images/g2.jpg" alt="Gallery Image 2" class="gallery-img">
+      <img src="images/g3.jpg" alt="Gallery Image 3" class="gallery-img">
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="modalCaption" class="modal-caption"></div>
+  </div>
+
+ <!-- Footer Section -->
+ <footer class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
+        <div class="d-flex flex-wrap align-content-center">
+          <a href="#"><img src="images/logo.png" alt="logo" /></a>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor. Ae</p>
+          <p>&copy; 2024 Uganda Thunder Volleyball Team. All rights reserved.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
+        <h5>ADDRESS</h5>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <h5>PHONE</h5>
+        <p>253232323232</p>
+        <h5>EMAIL</h5>
+        <p>email@example.com</p>
+        <div class="social-links">
+          <ul class="nav nav-item">
+            <li><a href="https://www.facebook.com/fh5co" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a></li>
+            <li><a href="#" class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a></li>
+            <li><a href="#" class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a></li>
+            <li><a href="#" class="btn btn-secondary ml-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- JavaScript for Lightbox Functionality -->
+  <script>
+    // Get the modal
+    var modal = document.getElementById("imageModal");
+
+    // Get the modal image and caption text
+    var modalImg = document.getElementById("modalImage");
+    var captionText = document.getElementById("modalCaption");
+
+    // Get all images in the gallery and add an onclick event
+    var galleryImages = document.querySelectorAll('.gallery-img');
+
+    galleryImages.forEach(function (img) {
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    });
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
+
+  <!-- Optional JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
